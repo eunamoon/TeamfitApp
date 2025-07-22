@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkillActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="역할 설정"
+        style="@style/TextAppearance.AppCompat.Medium"/>
+
+    <Button
+        android:id="@+id/jobButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="직군 선택하기" />
+
+
+    <Button
+        android:id="@+id/stackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="스택 선택하기" />
+
+    <TextView
+        android:id="@+id/selectedSummaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="선택된 태그: " />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다음" />
+
+
+</LinearLayout>
