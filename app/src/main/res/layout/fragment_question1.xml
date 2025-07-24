@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionFragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:drawableStart="@drawable/icon_back"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawablePadding="8dp"
+            android:textColor="#000000"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/groupkeyword"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="43dp"
+            android:textStyle="bold"
+            android:textColor="#666666"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:text="친구에게 어떤 스타일로 말하나요?"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:textSize="10sp"
+            android:textColor="#888888"
+            android:text="회원님을 더 잘 설명한다고 생각되는 것을 선택해주세요">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/question1">
+        </ImageView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnOption1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_unselected"
+                android:backgroundTint="@null"
+                android:text="직설적으로 말하기" />
+
+            <Button
+                android:id="@+id/btnOption2"
+                android:text="부드럽게 말하기"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:layout_marginRight="43dp"
+                android:background="@drawable/btn_unselected"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnnextdisable"
+            android:layout_gravity="center"
+            android:layout_marginTop="85dp">
+        </ImageButton>
+
+    </LinearLayout>
+
+</FrameLayout>
