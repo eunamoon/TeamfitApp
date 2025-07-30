@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.teamfitapp">
+    <!-- 최신 버전용 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> <!-- 구버전 호환용 -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeamFitApp_C"
+        tools:targetApi="31">
+        <activity
+            android:name=".ProjectCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Project_Management_Ing"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectManagement_Home"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_SkillSelection"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Introduction"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_JobSelection"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_JobSkillIntro"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_PrivacySettings"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_MyPosts"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teamfitapp.Profile_Home"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="프로필 사진"
+                android:src="@drawable/profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/profile_image_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back_camera"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:contentDescription="프로필 사진 변경"
+                android:focusable="true"
+                android:src="@drawable/camera"
+                android:layout_gravity="bottom|end"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="36dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="36dp"
+                >
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="사용자명"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:textAlignment="center"
+                    app:layout_constraintStart_toEndOf="@+id/profile_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/edtUserName"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_edit"
+                    android:background="@color/white"/>
+
+                <Button
+                    android:id="@+id/privacyBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="64dp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:backgroundTint="@color/light_orange"
+                    android:textColor="@color/orange"
+                    android:text="정보 공개 중"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/selectRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="UX·UI 디자인"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/profile_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="146dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="32dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="스크랩한 글"
+            android:drawableStart="@drawable/ic_scrap"
+            android:drawableTint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="32dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="지원한 프로젝트"
+            android:drawableStart="@drawable/ic_apply"
+            android:drawableTint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="32dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="작성한 글"
+            android:drawableStart="@drawable/ic_write"
+            android:drawableTint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="32dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="작성한 댓글"
+            android:drawableStart="@drawable/ic_comment"
+            android:drawableTint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-37dp"
+        tools:layout_editor_absoluteY="290dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="32dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="찜 한 사용자"
+            android:drawableStart="@drawable/ic_save"
+            android:drawableTint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="32dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="나를 찜 한 사용자"
+            android:drawableStart="@drawable/ic_save"
+            android:drawableTint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="386dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingStart="32dp"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/ic_evaluation"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="받은 팀원 평가"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white2"
+        android:layout_gravity="bottom"
+        style="@style/Widget.MaterialComponents.ActionBar.Primary"
+        app:itemIconSize="24dp"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_bottom_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</LinearLayout>

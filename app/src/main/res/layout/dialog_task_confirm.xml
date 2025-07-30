@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="24dp"
+    android:background="@drawable/card_background">
+
+    <!-- 팀원 프로필 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/memberNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="플젝맴"
+            android:textSize="16sp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/memberRoleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포지션 | PM"
+            android:textSize="12sp"
+            android:fontFamily="@font/pretendard_medium"
+            android:textColor="@color/gray1" />
+
+    </LinearLayout>
+
+    <!-- 메시지 -->
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="플젝맴님이 [문서화 작업] 담당 업무를 잘 수행했나요?"
+        android:textSize="14sp"
+        android:fontFamily="@font/pretendard_medium"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 버튼들 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="취소"
+            android:fontFamily="@font/pretendard_medium"
+            android:textColor="@color/gray1"
+            android:backgroundTint="@color/gray4"
+            android:layout_marginEnd="8dp"
+            style="@style/Widget.MaterialComponents.Button" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="업무 완료 인증하기"
+            android:fontFamily="@font/pretendard_medium"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:layout_marginStart="8dp"
+            style="@style/Widget.MaterialComponents.Button" />
+
+    </LinearLayout>
+
+</LinearLayout>
