@@ -2,36 +2,26 @@ package com.example.teamfitapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.teamfitapp.R
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val signUpBtn = findViewById<Button>(R.id.signUpButton)
+        val loginBtn = findViewById<Button>(R.id.loginButton)
 
-        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        bottomNavigation.setOnItemSelectedListener { item ->
-            when(item.itemId) {
-                R.id.nav_home -> {
-                    // 현재 메인화면이니까 아무것도 안함
-                    true
-                }
-                R.id.nav_profile -> {
-                    // 프로필 화면으로 이동
-                    val intent = Intent(this, Profile_Home::class.java)
-                    startActivity(intent)
-                    true
-                }
-                R.id.nav_search -> {
-                    val intent = Intent(this, ProjectManagement_Home::class.java)
-                    startActivity(intent)
-                    true
-                }
-                // 다른 메뉴들도 나중에 추가
-                else -> false
-            }
+        signUpBtn.setOnClickListener {
+            startActivity(Intent(this, SignUpActivity::class.java))
+        }
+
+        loginBtn.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java)) // 로그인 화면도 나중에 만들 수 있음
         }
     }
 }

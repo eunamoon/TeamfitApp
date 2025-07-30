@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#242424</color>
-    <color name="white">#FFFFFA</color>
-    <color name="white2">#FFFFFF</color>
-    <color name="gray1">#757575</color>
-    <color name="gray2">#B8B8B8</color>
-    <color name="gray3">#E0E0E0</color>
-    <color name="gray4">#F1F1F1</color>
-    <color name="orange">#FF6648</color>
-    <color name="orange2">#FDC6B9</color>
-    <color name="light_orange">#FFF6F1</color>
-    <color name="design">#5C9693</color>
-    <color name="gaebal">#007CBC</color>
-    <color name="marketing">#CCC14B</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="highlightRed">#FF5A3E</color>
 </resources>

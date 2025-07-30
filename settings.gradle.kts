@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TeamFitApp_C"
+rootProject.name = "TeamfitApp"
 include(":app")

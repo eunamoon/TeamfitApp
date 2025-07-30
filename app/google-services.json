@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "615636395521",
-    "project_id": "teamfitapp-48f4b",
-    "storage_bucket": "teamfitapp-48f4b.firebasestorage.app"
+    "project_number": "821031959200",
+    "project_id": "test-e267c",
+    "storage_bucket": "test-e267c.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:615636395521:android:b889e5052ad1370fd54200",
+        "mobilesdk_app_id": "1:821031959200:android:9939dfee089730c4b9a7c5",
         "android_client_info": {
           "package_name": "com.example.teamfitapp"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAlav-J3m5mUMJ8rEa6p30N6Z4sjLdxaXg"
+          "current_key": "AIzaSyBc6-oiqD_OfGVL5v3bEyX-0DOAU9crLec"
         }
       ],
       "services": {
