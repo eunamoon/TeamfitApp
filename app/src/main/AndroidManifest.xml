@@ -19,9 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamFitApp_C"
         tools:targetApi="31">
-        <activity
-            android:name=".ProjectCreateActivity"
-            android:exported="false" />
+
         <activity
             android:name=".Project_Management_Ing"
             android:exported="false" />
@@ -43,9 +41,7 @@
         <activity
             android:name=".Profile_PrivacySettings"
             android:exported="false" />
-        <activity
-            android:name=".Profile_MyPosts"
-            android:exported="false" />
+
         <activity
             android:name=".Profile_Home"
             android:exported="false" />
